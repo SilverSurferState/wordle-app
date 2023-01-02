@@ -13,12 +13,14 @@ function App() {
   const [wordSet, setWordSet] = useState(new Set());
   const [disabledKeys, setDisabledKeys] = useState([]);
   const [gameOver, setGameOver] = useState({gameOver: false, word: false});
+  const [wordToGuess, setWordToGuess] = useState("");
 
-  const wordToGuess = "RIGHT";
+  // const wordToGuess = "RIGHT";
 
   useEffect(() => {
     generateSet().then((words) => {
       setWordSet(words.wordSet);
+      setWordToGuess((words.correctWord).toUpperCase());
     });
   }, []);
 
