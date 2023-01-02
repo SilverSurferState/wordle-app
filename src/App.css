@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+body{
+  background-color: black;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +40,83 @@
     transform: rotate(360deg);
   }
 }
+
+.row{
+  margin-top: 0.5em;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.keyrow{
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  display: block;
+}
+
+.tile{
+  width: 2em;
+  height: 2em;
+  border: 2px solid gray;
+  border-radius: 0.1em;
+  display: inline-table;
+  margin-left: 0.5em;
+}
+
+.letter{
+  font-size: 1em;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+}
+
+.keyboard{
+  font-size: medium;
+  margin: auto;
+  display: table;
+  justify-content: center;
+}
+
+.title{
+  text-align: center;
+  color: white;
+}
+
+#default{
+  background-color: black;
+}
+
+#nearly{
+  background-color: orange;
+}
+
+#perfect{
+  background-color: green;
+}
+
+.key{
+  display: inline-table;
+  margin: 1px;
+  height: 3em;
+  width: 2em;
+  padding-top: 2px;
+  vertical-align: center;
+  background-color: darkgrey;
+  color: white;
+  border: solid 1px black;
+}
+
+#big{
+  width: 4em;
+}
+
+#disabled{
+  background-color: rgb(49, 48, 48);
+}
+
+.gameOver{
+  color: white;
+  text-align: center;
+}
+
